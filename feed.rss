@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel><title>Molusco Games</title><link>https://monguito.github.io/web//index.html</link>
+<description>Indie games</description><language>en</language>
+<lastBuildDate>Mon, 18 Aug 2025 18:59:10 -0300</lastBuildDate>
+<pubDate>Mon, 18 Aug 2025 18:59:10 -0300</pubDate>
+<atom:link href="https://monguito.github.io/web//feed.rss" rel="self" type="application/rss+xml" />
+<item><title>
+The first post
+</title><description><![CDATA[
+
+<p>Welcome to Molusco Games. I've been trying to make games since 1992. Never succeeded, but I keep trying.
+I have a few projects in development: a walking simulator, a medieval adventure, a turn based survival game, and so on. Everything is on very early stages of development so there's nothing to show yet.</p>
+
+<p>Currently (August 2025) I'm undergoing a monthly challenge: every day I come up with a new videogame idea and write a few sentences about it. I'm on the 18th day, and when I reach the 31th idea, I'll pick <strong>one</strong> of those to fully develop as my first official game.</p>
+
+<p>The idea is to pick something simple to test every aspect of game development, from the sketchboard to publishing.</p>
+
+<p>Tags: <a href='tag_molusco.html'>molusco</a>, <a href='tag_plans.html'>plans</a></p>
+
+
+
+
+
+
+
+
+
+
+
+<!-- text end -->
+]]></description><link>https://monguito.github.io/web//the-first-post.html</link>
+<guid>https://monguito.github.io/web//./the-first-post.html</guid>
+<dc:creator>Compi</dc:creator>
+<pubDate>Mon, 18 Aug 2025 18:34:28 -0300</pubDate></item>
+</channel></rss>
