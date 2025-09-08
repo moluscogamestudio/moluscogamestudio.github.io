@@ -1,0 +1,13 @@
+<div class="headerholder">
+	<div class="header">
+		<div class="centro">
+		<div id="title"><a class="centro" href="index.html"><img src="logo.png" style="max-width:100%;height:auto;"></a>
+		</div>
+		<a class="cabeza" href="index.html">Home</a> &mdash; 
+		<a class="cabeza" href="all_posts.html">All posts</a> &mdash; 
+		<a class="cabeza" href="all_tags.html">All tags</a> &mdash; 
+		<a class="cabeza" href="about.html">About</a> 
+		<p> </p> 
+		</div>
+	</div>
+</div>

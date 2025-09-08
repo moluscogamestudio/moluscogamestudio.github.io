@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel><title>Molusco Gamestudio</title><link>https://moluscogamestudio.github.io//index.html</link>
+<description>Indie games that cater to nobody but me</description><language>en</language>
+<lastBuildDate>Mon, 08 Sep 2025 18:14:04 -0300</lastBuildDate>
+<pubDate>Mon, 08 Sep 2025 18:14:04 -0300</pubDate>
+<atom:link href="https://moluscogamestudio.github.io//feed.rss" rel="self" type="application/rss+xml" />
+<item><title>
+Natural selection
+</title><description><![CDATA[
+
+<p>As per my last post, I wrote 31 new game ideas and selected three possible games. Mayble I'll do all three (yeah, sure). Maybe I'll START both three and then dich all three until a new thing comes along.</p>
+
+<p>The selected games are: </p>
+
+<ul>
+<li>a broody, ambiental, horror game in first person about being stuck in an unknown apartment building. Let's call it <strong><em>building</em></strong>.</li>
+<li>a dark humor job simulator game where the grim reaper works from home. Let's call it <strong><em>reaper</em></strong>.</li>
+<li>a funny physics puzzle game where you are a wizard trapped in a dungeon and your spells let you create and modify your environment. Let's call it <strong><em>wizard</em></strong>.</li>
+</ul>
+
+<p>If I had to choose one of those, It would be <strong><em>wizard</em></strong>. Creative use of the spells to solve the dungeon get me hyped up. I've been thinking about different spells, like "web": you create a web. The web is bouncy so you can jump higher from it. But it's sticky, so enemies walk really slow over it. Also you can use it to climb vertically like a ladder. And if it touches fire, it's engulfed on flames. Or you can use it to block a corridor. The problem with a game like this is I need to tweak a lot of things to get the mechanics / physics right. As a plus, it can work in several ways: FPS, 3rd person view, etc. I was even thinking about a game where the environment is all blocky 3d and the characters are superdeformed 2d sprites with a thick border. It was cool. Might steal.</p>
+
+<p>Next, I would choose <strong><em>reaper</em></strong>. I like dark humor and the whole "kill the guy by suggesting a course of action" also gets me hyped. The main challenge for this game is graphics. While in "wizard" the graphics can be super blocky because the main fun is in the physics / magical system, here the fun must be how the decisions made by the soon-to-be dead people are depicted. Pacman doesn't just dissappears when he dies, y'know. I know there can be lots of fun in this game, but how I depict it is crucial. Cutesy art style? medieval woodblock prints? no, those are reserved for another one. Crude and rudimentary pixel art? I don't know. The best part is I can get to do all the game without any art at all, just menus. See how it goes.</p>
+
+<p>Last, it's <strong><em>building</em></strong>. It's an over-done idea. A cliché. Another backrooms game. The thing is... I worked a LOT with the first 3 Quake games, Half-Life and Counterstrike 1.4 to 1.6 so I'm really proficient with 3D games about a gloomy building in a first person view game. So I know EXACTLY what to do here. Bad thing? How do I get people to be engaged in "just another spooky backrooms game"?</p>
+
+<p>Tags: <a href='tag_plans.html'>plans</a></p>
+<!-- text end -->
+]]></description><link>https://moluscogamestudio.github.io//natural-selection.html</link>
+<guid>https://moluscogamestudio.github.io//./natural-selection.html</guid>
+<dc:creator>Compi</dc:creator>
+<pubDate>Mon, 08 Sep 2025 18:14:02 -0300</pubDate></item>
+<item><title>
+The first post
+</title><description><![CDATA[
+
+<p>Welcome to Molusco Games. I've been making dumb games since 1992. Never succeeded in making a full release, but I keep trying and having fun.
+I have a few projects in development: a walking simulator, a medieval adventure, a turn based survival game, and so on. Everything is on very early stages of development so there's nothing to show yet.</p>
+
+<p>Currently (August 2025) I'm undergoing a monthly challenge: every day I come up with a new videogame idea and write a few sentences about it. I'm on the 18th day, and when I reach the 31th idea, I'll pick <strong>one</strong> of those to fully develop as my first official game.</p>
+
+<p>The idea is to pick something simple to test every aspect of game development, from the sketchboard to publishing.</p>
+
+<p>Tags: <a href='tag_molusco.html'>molusco</a>, <a href='tag_plans.html'>plans</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- text end -->
+]]></description><link>https://moluscogamestudio.github.io//the-first-post.html</link>
+<guid>https://moluscogamestudio.github.io//./the-first-post.html</guid>
+<dc:creator>Compi</dc:creator>
+<pubDate>Mon, 18 Aug 2025 18:34:28 -0300</pubDate></item>
+</channel></rss>
