@@ -2,9 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
 <channel><title>Molusco Gamestudio</title><link>https://moluscogamestudio.github.io//index.html</link>
 <description>Indie games that cater to nobody but me</description><language>en</language>
-<lastBuildDate>Mon, 08 Sep 2025 18:14:04 -0300</lastBuildDate>
-<pubDate>Mon, 08 Sep 2025 18:14:04 -0300</pubDate>
+<lastBuildDate>Fri, 19 Sep 2025 11:34:27 -0300</lastBuildDate>
+<pubDate>Fri, 19 Sep 2025 11:34:27 -0300</pubDate>
 <atom:link href="https://moluscogamestudio.github.io//feed.rss" rel="self" type="application/rss+xml" />
+<item><title>
+The chosen one
+</title><description><![CDATA[
+
+<p>Predictably, the one game I chose as a starter, was the unnamed <strong>wizard</strong> game.
+I started prototyping the engine and writing some definitions, including a game design document. </p>
+
+<p>So far, it's nothing more than that: just a prototype using Kenney's 3D assets. The main goal is to test if the core game is fun or not: solve puzzles and don't get killed using magic in a dungeon.</p>
+
+<p>Here's a quick demo:</p>
+
+<p><video width="640" height="480" controls autoplay muted>
+  <source src="img/v1.mp4" type="video/mp4">
+ERROR: Your browser does not support the video tag.
+</video></p>
+
+<p>Tags: <a href='tag_wizard.html'>wizard</a></p>
+
+<!-- text end -->
+]]></description><link>https://moluscogamestudio.github.io//the-chosen-one.html</link>
+<guid>https://moluscogamestudio.github.io//./the-chosen-one.html</guid>
+<dc:creator>Compi</dc:creator>
+<pubDate>Fri, 19 Sep 2025 11:30:00 -0300</pubDate></item>
 <item><title>
 Natural selection
 </title><description><![CDATA[
@@ -26,6 +49,7 @@ Natural selection
 <p>Last, it's <strong><em>building</em></strong>. It's an over-done idea. A cliché. Another backrooms game. The thing is... I worked a LOT with the first 3 Quake games, Half-Life and Counterstrike 1.4 to 1.6 so I'm really proficient with 3D games about a gloomy building in a first person view game. So I know EXACTLY what to do here. Bad thing? How do I get people to be engaged in "just another spooky backrooms game"?</p>
 
 <p>Tags: <a href='tag_plans.html'>plans</a></p>
+
 <!-- text end -->
 ]]></description><link>https://moluscogamestudio.github.io//natural-selection.html</link>
 <guid>https://moluscogamestudio.github.io//./natural-selection.html</guid>
@@ -43,6 +67,7 @@ I have a few projects in development: a walking simulator, a medieval adventure,
 <p>The idea is to pick something simple to test every aspect of game development, from the sketchboard to publishing.</p>
 
 <p>Tags: <a href='tag_molusco.html'>molusco</a>, <a href='tag_plans.html'>plans</a></p>
+
 
 
 
