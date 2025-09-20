@@ -36,81 +36,90 @@ Spells and effects are bound by three abstract units of distance called:
 - Damage is pure damage, there are no types. 
 - Armor (Toughness) reduces damage. 
 - Criticals ignores armor.
+- DoT damage over time ticks once by second.
 
-### Entities
-
-- 
-- 
-- 
-- 
 
 ### Targets
 
 Targets are game entities that can be affected by spells. 
 
-- Wall: Walls, floors and ceiling of the dungeon.
-- Door: Hinged doors, trapdoors, chests.
-- Self: the player
-- Creature: another creature that's not the player
-- Object: some kind of furniture, like a sconce or torch, debris, coins, etc.
-- Area: a circular area in range
+- `wall`: Walls, floors and ceiling of the dungeon.
+- `door`: Hinged doors, trapdoors, sewer covers, chests.
+- `self`: the player
+- `creature`: another creature that's not the player
+- `object`: some kind of furniture, like a sconce or torch, debris, coins, etc.
+- `area`: a circular area in range
 
 Some entities share more than one target type. I.E.: Chests are both doors and objects. 
 
 ### Spells
 
-There are several schools of spells. You start with a few spells and get random ones as you go on. The spells are of an agnostic nature and scale only with level. Their descriptions are purposefully vague and refer to <objectives>, <materials>, and <actions>
+There are several schools of spells. You start with a few spells and get random ones as you go on. The spells are of an agnostic nature and scale only with level. Their descriptions are purposefully vague and refer to `objectives`, `materials`, and `actions`
 
-- Acid: <creature> or <object> loses armor over time 1/S for 4 seconds. If armor reaches zero, does 1 damage per tick. 
-- Anchor: <object> or <creature> can't move away from <object> or <creature>
-- Attract: jolts <object> towards the player
-- Barrier: Creates a see-thru but impassable wall in <area> for a certain time.
-- Berzerk: <creature> does 2x damage and attacks the closest <creature> or <object>
-- Burn: 1 damage. <creature> or <object> is temporarily set on fire, gets 1 damage / s for 4 seconds
-- Charm: <creature> becomes friendly and fights by your side
-- Climb: <self> can walk by <walls> (including ceiling).
-- Confuse: <creature> walks randomly and is unable to attack
-- Darkness: creates a wall of darkness in <area> that blocks visibility, but is passable
-- Detect: detects <creatures> far and marks them
-- Disguise: !!!!! MODIFY OR REMOVE !!!!  <self>, <door>, or <wall> changes aspect.
-- Enlarge: <object/creature> increases size
-- Entrophy: Armor turns to 0 for <creature> or <object>
-- Fix: <object> or <door> heals 2 damage.
-- Fog: creates fog in <area> at floor level.
-- Follow: <object> becomes <creature> and levitates following you.
-- Freeze: 1 damage. <object>, or <creature> becomes frozen
-- Gravity: alters gravity in <area> where <objects> and <creatures> are heavily attracted to the floor.
-- Haste: <creature> or <self> moves faster
-- Illusion: Draws in <area> an  <object> or <creature> or <self> previously selected.
-- Imprison: <creature> can't move an can't be damaged.
-- Iron: <creature> or <self> raises armor to max, but halves movement.
-- Levitate: <creature> or <object> levitates towards the ceiling and after the time runs out, slowly stops levitating.
-- Light: creates a light emanating from a point in <wall> or <object>
-- Luck: !!!!! MODIFY OR REMOVE !!!!! Next attack is critical. (how?)
-- Magnet: <object 1> is magnetically attracted to <object 2> if close.
-- Orbit: <object 1> starts orbiting <creature> or <self>, damaging other <objects> and <creatures> close.
-- Pacify: <creature> stops aggro.
-- Panacea: removes all altered status from <creature> or <self>
-- Phase: <object> or <creature> dissapears and then reappears later in the same place.
-- Poison: Creates a poisonous <area> at floor level that deals 1 damage/second to any creature on it 
-- Portal: creates a magical door to a location you can see
-- Reduce: <object/creature> decreases size
-- Renew: <creature> or <self> heals 1 damage.
-- Repel: <objects> and <creatures> close to <self> are pushed outwards explosively.
-- Seal: !!!! MODIFY OR REMOVE !!!! locks door, chest or object. only you can open it.
-- Shield: <self> gains 3 armor points
-- Shock: 3 damage. <creature> stunned for some time
-- Skeleton: !!!! MODIFY OR REMOVE !!!! the corpse of a nearby <creature> becomes a skeleton that aids you in combat
-- Sling: <object> is hurled away from <self>
-- Sound: !!!! MODIFY OR REMOVE !!!! emits sounds <area>, or mutes own sounds
-- Splash: Creates a blob of water that flushes <objects> and <creatures> in <area> (and fills small ponds?)
-- Switch: <object 1> and <object 2> change places
-- Swoosh: <self> hurls forward several meters gaining momentum.
-- Telekinesys: <object> levitates and can be transported
-- Thorns: <area> is filled with thorns. any <creature> stepping on it receives 1 damage, and <self> heals 1 damage if nearby.
-- Vision: you see through the eyes of target <object> or <creature>
-- Ward: 1 damage when <creature> enteres the <area> and loud noise emmited.
-- Web: Creates a sticky and jumpy web in <area> that can be set on fire.
+- Cast Time: how many seconds it takes to cast. I=0, S=1, M=3, L=5
+- Duration: how many seconds the effect lasts. If the spell contains DoT it's the amount of ticks.
+- Area: Area in the floor with a size of... S=Small, about the size of a chest. M=Medium, about the size of a Queen bed. L=Large, about the size of a bus.
+- Range: C=Close, N=Nearby, F=Far
+- Mana cost: S=Small, about 12% of the pool. M=Medium, about 20% of the pool. L=Large, about the 40% of the pool.
+
+
+
+| Name           | Target                  | Description                                                    | Cast | Dura | Ar | Rng | Mn |
+|----------------|-------------------------|----------------------------------------------------------------|:----:|:----:|:--:|:---:|:--:|
+| Acid           | `creature` / `object`   | DoT of 0 damage. Reduces armor. If armor = 0, does 1 damage.   |  I   |   5  | -  |  C  | S  |
+| Anchor         | `creature` / `object`   | can't move away from `object` or `creature`                    |  S   |  10  | M  |  N  | M  |
+| Attract        | `object`                | jolts `small` target towzards `self`                           |  I   |   -  | -  |  F  | L  |
+| Barrier        | `area`                  | creates see-thru but impassable wall                           |  S   |  30  | M  |  N  | L  |
+| Berzerk        | `creature`              | attacks closest `creature` or `object`. Does twice damage      |  S   |  20  | -  |  F  | M  |
+| Burn           | `creature` / `object`   | 1 damage, followed by DoT                                      |  M   |   4  | -  |  F  | S  |
+| Charm          | `creature`              | becomes friendly and fights by your side                       |  M   |  20  | -  |  N  | M  |
+| Climb          | `self`                  | can walk by `walls` (including ceilings)                       |  L   |  60  | -  |  -  | L  |
+| Confuse        | `creature`              | walks randomly and is unable to attacks                        |  M   |  20  | -  |  M  | L  |
+| Darkness       | `area`                  | creates a passable wall of darkness that blocks visibility     |  S   |  30  | M  |  F  | L  |
+| Detect         | `self`                  | detects every `creature` in range and marks them               |      |      |    |     |    |
+|                |                         |                                                                |      |      |    |     |    |
+|                |                         |                                                                |      |      |    |     |    |
+|                |                         |                                                                |      |      |    |     |    |
+
+- Detect: detects `creatures` far and marks them
+- Entrophy: Armor turns to 0 for `creature` or `object`
+- Fix: `object` or `door` heals 2 damage.
+- Fog: creates fog in `area` at floor level.
+- Follow: `object` becomes `creature` and levitates following you.
+- Freeze: 1 damage. `object`, or `creature` becomes frozen
+- Gravity: alters gravity in `area` where `objects` and `creatures` are heavily attracted to the floor.
+- Haste: `creature` or `self` moves faster
+- Illusion: Draws in `area` an  `object` or `creature` or `self` previously selected.
+- Invisibility: `self` becomes ethereal and can't be seen by enemies.
+- Imprison: `creature` can't move an can't be damaged.
+- Iron: `creature` or `self` raises armor to max, but halves movement.
+- Levitate: `creature` or `object` levitates towards the ceiling and after the time runs out, slowly stops levitating.
+- Light: creates a light emanating from a point in `wall` or `object`
+- Magnet: `object 1` is magnetically attracted to `object 2` if close.
+- Merge: `self` is fused to a selected `wall`. Can't move or act, but can see. 
+- Orbit: `object 1` starts orbiting `creature` or `self`, damaging other `objects` and `creatures` close.
+- Pacify: `creature` stops aggro.
+- Pit: creates a pit in a `wall` (floor and ceiling included) filled with spikes that do 3 damage.
+- Panacea: removes all altered status and ailments from `creature` or `self`, stopping any DoT
+- Phase: `object` or `creature` dissapears and then reappears later in the same place.
+- Poison: Creates a poisonous `area` at floor level that deals 1 DoT to any creature on it.
+- Portal: creates a magical door connecting `wall 1` to `wall 2`
+- Reduce: `object` or `creature` decreases it's size.
+- Renew: `creature` or `self` heals 2 damage.
+- Repel: `objects` and `creatures` close to `self` are pushed outwards explosively.
+- Shield: `self` gains 3 armor points
+- Shock: 3 damage. `creature` stunned for some time
+- Sling: `object` is hurled away from `self`
+- Splash: Creates a blob of water that flushes `objects` and `creatures` in `area` (and fills small ponds?)
+- Switch: `object 1` and `object 2` change places
+- Swoosh: `self` hurls forward several meters gaining momentum.
+- Telekinesys: `object` levitates and can be transported
+- Thorns: `area` is filled with thorns. any `creature` stepping on it receives 1 damage, and `self` heals 1 damage if nearby.
+- Trick: `door` or `object` becomes invisible to enemies.             
+- Vision: you see through the eyes of target `object` or `creature`
+- Ward: 1 damage when `creature` enteres the `area` and loud noise emmited.
+- Wall: Creates a `wall` in the selected `area`
+- Web: Creates a sticky and jumpy web in `area` that can be set on fire.
 
 
 
@@ -129,7 +138,9 @@ There are several schools of spells. You start with a few spells and get random 
 
 ### Leveling up
 
-Once the character levels up, it can choose one known spell to fortify. Fortified spells get better, up to 3 times. A fortified spell does more damage, or lasts longer, or gets a bigger area, depending on spell.
+Once the character levels up, it can choose to buff: Health amount, Mana recovery time, Casting Time, Lasting time, or range.
+If you pick up a spell you already know, it gets fortified (up to 3 times). A fortified spell does more damage, or lasts longer, or gets a bigger area, affect bigger objects or new kind of targets, depending on spell. A fortified spell always costs less. (25% less, 50% less, 75% less)
+
  
 ## Map Levels
 
