@@ -56,7 +56,7 @@ Some entities share more than one target type. I.E.: Chests are both doors and o
 
 There are several schools of spells. You start with a few spells and get random ones as you go on. The spells are of an agnostic nature and scale only with level. Their descriptions are purposefully vague and refer to `objectives`, `materials`, and `actions`
 
-- Cast Time: how many seconds it takes to cast. I=0, S=1, M=3, L=5
+- Cast Time: how many seconds it takes to cast. I=0, S=1, M=2, L=3
 - Duration: how many seconds the effect lasts. If the spell contains DoT it's the amount of ticks.
 - Area: Area in the floor with a size of... S=Small, about the size of a chest. M=Medium, about the size of a Queen bed. L=Large, about the size of a bus.
 - Range: C=Close, N=Nearby, F=Far
@@ -64,30 +64,36 @@ There are several schools of spells. You start with a few spells and get random 
 
 
 
-| Name           | Target                  | Description                                                    | Cast | Dura | Ar | Rng | Mn |
-|----------------|-------------------------|----------------------------------------------------------------|:----:|:----:|:--:|:---:|:--:|
-| Acid           | `creature` / `object`   | DoT of 0 damage. Reduces armor. If armor = 0, does 1 damage.   |  I   |   5  | -  |  C  | S  |
-| Anchor         | `creature` / `object`   | can't move away from `object` or `creature`                    |  S   |  10  | M  |  N  | M  |
-| Attract        | `object`                | jolts `small` target towzards `self`                           |  I   |   -  | -  |  F  | L  |
-| Barrier        | `area`                  | creates see-thru but impassable wall                           |  S   |  30  | M  |  N  | L  |
-| Berzerk        | `creature`              | attacks closest `creature` or `object`. Does twice damage      |  S   |  20  | -  |  F  | M  |
-| Burn           | `creature` / `object`   | 1 damage, followed by DoT                                      |  M   |   4  | -  |  F  | S  |
-| Charm          | `creature`              | becomes friendly and fights by your side                       |  M   |  20  | -  |  N  | M  |
-| Climb          | `self`                  | can walk by `walls` (including ceilings)                       |  L   |  60  | -  |  -  | L  |
-| Confuse        | `creature`              | walks randomly and is unable to attacks                        |  M   |  20  | -  |  M  | L  |
-| Darkness       | `area`                  | creates a passable wall of darkness that blocks visibility     |  S   |  30  | M  |  F  | L  |
-| Detect         | `self`                  | detects every `creature` in range and marks them               |      |      |    |     |    |
-|                |                         |                                                                |      |      |    |     |    |
-|                |                         |                                                                |      |      |    |     |    |
-|                |                         |                                                                |      |      |    |     |    |
+| Name           | Target       | Description                                                    | Cast | Dura | Ar | Rng | Mn |
+|----------------|--------------|----------------------------------------------------------------|:----:|:----:|:--:|:---:|:--:|
+| Acid           | C / O        | DoT of 0 damage. Reduces armor. If armor = 0, does 1 damage.   |  I   |   5  | -  |  C  | S  |
+| Anchor         | C / O        | can't move away from `object` or `creature`                    |  S   |  10  | M  |  N  | M  |
+| Attract        | O            | jolts `small` target towzards `self`                           |  I   |   -  | -  |  F  | L  |
+| Barrier        | A            | creates see-thru but impassable wall                           |  S   |  30  | M  |  N  | L  |
+| Berzerk        | C            | attacks closest `creature` or `object`. Does twice damage      |  S   |  20  | -  |  F  | M  |
+| Burn           | C / O        | 1 damage, followed by DoT                                      |  S   |   4  | -  |  F  | S  |
+| Charm          | C            | becomes friendly and fights by your side                       |  M   |  20  | -  |  N  | M  |
+| Climb          | S            | can walk by `walls` (including ceilings)                       |  L   |  60  | -  |  -  | L  |
+| Confuse        | C            | walks randomly and is unable to attacks                        |  M   |  20  | -  |  N  | L  |
+| Darkness       | A            | creates a passable wall of darkness that blocks visibility     |  S   |  30  | M  |  F  | L  |
+| Detect         | S            | detects every `creature` in range and marks them               |  L   |  20  | L  |  -  | M  |
+| Entrophy       | C / O / D    | armor turns to 0                                               |  M   |   -  | -  |  F  | L  |
+| Fix            | O / D        | heals 2 damage                                                 |  S   |   -  | -  |  C  | S  |
+| Fog            | A            | creates fog that blocks visibility at floor level              |  M   |  30  | M  |  L  | M  |
+| Follow         | O            | becomes `creature` and starts following the player             |  S   | 120  | -  |  L  | L  |
+| Freeze         | C / O / D    | 1 damage. becomes frozen (can't move / animate )               |  I   |  10  | -  |  N  | M  |
+| Gravity        | A            | gravity in area becomes 50. speed / 2                          |  M   |  30  | M  |  N  | M  |
+| Haste          | C / S        | movement * 2                                                   |  L   |  60  | -  |  C  | L  |
+| Illusion       | A            | creates illusion of the player                                 |  I   |   5  | S  |  F  | M  |
+| Invisibility   | S            | can't be seen by others                                        |  S   |   5  | -  |  -  | L  |
+| Imprison       | C            | can't move, can't animate, can't be damaged                    |  I   |   3  | -  |  C  | M  |
+| Iron           | C / S        | can't be damaged. speed / 4                                    |  M   |      |    |     |    |
+|                |              |                                                                |      |      |    |     |    |
+|                |              |                                                                |      |      |    |     |    |
+|                |              |                                                                |      |      |    |     |    |
+|                |              |                                                                |      |      |    |     |    |
 
-- Detect: detects `creatures` far and marks them
-- Entrophy: Armor turns to 0 for `creature` or `object`
-- Fix: `object` or `door` heals 2 damage.
-- Fog: creates fog in `area` at floor level.
-- Follow: `object` becomes `creature` and levitates following you.
-- Freeze: 1 damage. `object`, or `creature` becomes frozen
-- Gravity: alters gravity in `area` where `objects` and `creatures` are heavily attracted to the floor.
+
 - Haste: `creature` or `self` moves faster
 - Illusion: Draws in `area` an  `object` or `creature` or `self` previously selected.
 - Invisibility: `self` becomes ethereal and can't be seen by enemies.
@@ -110,6 +116,7 @@ There are several schools of spells. You start with a few spells and get random 
 - Shield: `self` gains 3 armor points
 - Shock: 3 damage. `creature` stunned for some time
 - Sling: `object` is hurled away from `self`
+- Slow: creature's speed is halved
 - Splash: Creates a blob of water that flushes `objects` and `creatures` in `area` (and fills small ponds?)
 - Switch: `object 1` and `object 2` change places
 - Swoosh: `self` hurls forward several meters gaining momentum.
