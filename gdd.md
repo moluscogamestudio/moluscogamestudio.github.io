@@ -87,20 +87,28 @@ There are several schools of spells. You start with a few spells and get random 
 | Illusion       | A            | creates illusion of the player                                 |  I   |   5  | S  |  F  | M  |
 | Invisibility   | S            | can't be seen by others                                        |  S   |   5  | -  |  -  | L  |
 | Imprison       | C            | can't move, can't animate, can't be damaged                    |  I   |   3  | -  |  C  | M  |
-| Iron           | C / S        | can't be damaged. speed / 4                                    |  M   |      |    |     |    |
+| Iron           | C / S        | can't be damaged. (max armor?) speed / 4                       |  M   |  20  | -  |  -  | L  |
+| Levitate       | C / O        | levitates upwards and after time runs out, slowly descents     |  M   |   7  | -  |  F  | M  |
+| Light          | W / O        | creates light emanating from target                            |  S   | 120  | -  |  N  | S  |
+| Magnet         |              |                                                                |      |      |    |     |    |
+| Merge          | W            | fuses with selected wall. Can't move or act, but can see.      |  S   |  10  | -  |  C  | M  |
+| Orbit          |              |                                                                |      |      |    |     |    |
+| Pacify         |              |                                                                |      |      |    |     |    |
+| Pit            |              |                                                                |      |      |    |     |    |
+| Panacea        |              |                                                                |      |      |    |     |    |
+| Phase          |              |                                                                |      |      |    |     |    |
+| Poison         |              |                                                                |      |      |    |     |    |
+| Portal         |              |                                                                |      |      |    |     |    |
+| Reduce         |              |                                                                |      |      |    |     |    |
+|                |              |                                                                |      |      |    |     |    |
+|                |              |                                                                |      |      |    |     |    |
+|                |              |                                                                |      |      |    |     |    |
+|                |              |                                                                |      |      |    |     |    |
 |                |              |                                                                |      |      |    |     |    |
 |                |              |                                                                |      |      |    |     |    |
 |                |              |                                                                |      |      |    |     |    |
 |                |              |                                                                |      |      |    |     |    |
 
-
-- Haste: `creature` or `self` moves faster
-- Illusion: Draws in `area` an  `object` or `creature` or `self` previously selected.
-- Invisibility: `self` becomes ethereal and can't be seen by enemies.
-- Imprison: `creature` can't move an can't be damaged.
-- Iron: `creature` or `self` raises armor to max, but halves movement.
-- Levitate: `creature` or `object` levitates towards the ceiling and after the time runs out, slowly stops levitating.
-- Light: creates a light emanating from a point in `wall` or `object`
 - Magnet: `object 1` is magnetically attracted to `object 2` if close.
 - Merge: `self` is fused to a selected `wall`. Can't move or act, but can see. 
 - Orbit: `object 1` starts orbiting `creature` or `self`, damaging other `objects` and `creatures` close.
