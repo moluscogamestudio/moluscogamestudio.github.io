@@ -56,6 +56,7 @@ Some entities share more than one target type. I.E.: Chests are both doors and o
 
 There are several schools of spells. You start with a few spells and get random ones as you go on. The spells are of an agnostic nature and scale only with level. Their descriptions are purposefully vague and refer to `objectives`, `materials`, and `actions`
 
+- Target: C=Creature, O=Object, D=Door, W=Wall, A=Area, S=Self
 - Cast Time: how many seconds it takes to cast. I=0, S=1, M=2, L=3
 - Duration: how many seconds the effect lasts. If the spell contains DoT it's the amount of ticks.
 - Area: Area in the floor with a size of... S=Small, about the size of a chest. M=Medium, about the size of a Queen bed. L=Large, about the size of a bus.
@@ -64,77 +65,58 @@ There are several schools of spells. You start with a few spells and get random 
 
 
 
-| Name           | Target       | Description                                                    | Cast | Dura | Ar | Rng | Mn |
-|----------------|--------------|----------------------------------------------------------------|:----:|:----:|:--:|:---:|:--:|
-| Acid           | C / O        | DoT of 0 damage. Reduces armor. If armor = 0, does 1 damage.   |  I   |   5  | -  |  C  | S  |
-| Anchor         | C / O        | can't move away from `object` or `creature`                    |  S   |  10  | M  |  N  | M  |
-| Attract        | O            | jolts `small` target towzards `self`                           |  I   |   -  | -  |  F  | L  |
-| Barrier        | A            | creates see-thru but impassable wall                           |  S   |  30  | M  |  N  | L  |
-| Berzerk        | C            | attacks closest `creature` or `object`. Does twice damage      |  S   |  20  | -  |  F  | M  |
-| Burn           | C / O        | 1 damage, followed by DoT                                      |  S   |   4  | -  |  F  | S  |
-| Charm          | C            | becomes friendly and fights by your side                       |  M   |  20  | -  |  N  | M  |
-| Climb          | S            | can walk by `walls` (including ceilings)                       |  L   |  60  | -  |  -  | L  |
-| Confuse        | C            | walks randomly and is unable to attacks                        |  M   |  20  | -  |  N  | L  |
-| Darkness       | A            | creates a passable wall of darkness that blocks visibility     |  S   |  30  | M  |  F  | L  |
-| Detect         | S            | detects every `creature` in range and marks them               |  L   |  20  | L  |  -  | M  |
-| Entrophy       | C / O / D    | armor turns to 0                                               |  M   |   -  | -  |  F  | L  |
-| Fix            | O / D        | heals 2 damage                                                 |  S   |   -  | -  |  C  | S  |
-| Fog            | A            | creates fog that blocks visibility at floor level              |  M   |  30  | M  |  L  | M  |
-| Follow         | O            | becomes `creature` and starts following the player             |  S   | 120  | -  |  L  | L  |
-| Freeze         | C / O / D    | 1 damage. becomes frozen (can't move / animate )               |  I   |  10  | -  |  N  | M  |
-| Gravity        | A            | gravity in area becomes 50. speed / 2                          |  M   |  30  | M  |  N  | M  |
-| Haste          | C / S        | movement * 2                                                   |  L   |  60  | -  |  C  | L  |
-| Illusion       | A            | creates illusion of the player                                 |  I   |   5  | S  |  F  | M  |
-| Invisibility   | S            | can't be seen by others                                        |  S   |   5  | -  |  -  | L  |
-| Imprison       | C            | can't move, can't animate, can't be damaged                    |  I   |   3  | -  |  C  | M  |
-| Iron           | C / S        | can't be damaged. (max armor?) speed / 4                       |  M   |  20  | -  |  -  | L  |
-| Levitate       | C / O        | levitates upwards and after time runs out, slowly descents     |  M   |   7  | -  |  F  | M  |
-| Light          | W / O        | creates light emanating from target                            |  S   | 120  | -  |  N  | S  |
-| Magnet         |              |                                                                |      |      |    |     |    |
-| Merge          | W            | fuses with selected wall. Can't move or act, but can see.      |  S   |  10  | -  |  C  | M  |
-| Orbit          |              |                                                                |      |      |    |     |    |
-| Pacify         |              |                                                                |      |      |    |     |    |
-| Pit            |              |                                                                |      |      |    |     |    |
-| Panacea        |              |                                                                |      |      |    |     |    |
-| Phase          |              |                                                                |      |      |    |     |    |
-| Poison         |              |                                                                |      |      |    |     |    |
-| Portal         |              |                                                                |      |      |    |     |    |
-| Reduce         |              |                                                                |      |      |    |     |    |
-|                |              |                                                                |      |      |    |     |    |
-|                |              |                                                                |      |      |    |     |    |
-|                |              |                                                                |      |      |    |     |    |
-|                |              |                                                                |      |      |    |     |    |
-|                |              |                                                                |      |      |    |     |    |
-|                |              |                                                                |      |      |    |     |    |
-|                |              |                                                                |      |      |    |     |    |
-|                |              |                                                                |      |      |    |     |    |
-
-- Magnet: `object 1` is magnetically attracted to `object 2` if close.
-- Merge: `self` is fused to a selected `wall`. Can't move or act, but can see. 
-- Orbit: `object 1` starts orbiting `creature` or `self`, damaging other `objects` and `creatures` close.
-- Pacify: `creature` stops aggro.
-- Pit: creates a pit in a `wall` (floor and ceiling included) filled with spikes that do 3 damage.
-- Panacea: removes all altered status and ailments from `creature` or `self`, stopping any DoT
-- Phase: `object` or `creature` dissapears and then reappears later in the same place.
-- Poison: Creates a poisonous `area` at floor level that deals 1 DoT to any creature on it.
-- Portal: creates a magical door connecting `wall 1` to `wall 2`
-- Reduce: `object` or `creature` decreases it's size.
-- Renew: `creature` or `self` heals 2 damage.
-- Repel: `objects` and `creatures` close to `self` are pushed outwards explosively.
-- Shield: `self` gains 3 armor points
-- Shock: 3 damage. `creature` stunned for some time
-- Sling: `object` is hurled away from `self`
-- Slow: creature's speed is halved
-- Splash: Creates a blob of water that flushes `objects` and `creatures` in `area` (and fills small ponds?)
-- Switch: `object 1` and `object 2` change places
-- Swoosh: `self` hurls forward several meters gaining momentum.
-- Telekinesys: `object` levitates and can be transported
-- Thorns: `area` is filled with thorns. any `creature` stepping on it receives 1 damage, and `self` heals 1 damage if nearby.
-- Trick: `door` or `object` becomes invisible to enemies.             
-- Vision: you see through the eyes of target `object` or `creature`
-- Ward: 1 damage when `creature` enteres the `area` and loud noise emmited.
-- Wall: Creates a `wall` in the selected `area`
-- Web: Creates a sticky and jumpy web in `area` that can be set on fire.
+| Name         | Target    | Description                                                          | Cast | Dura | Ar | Rng | Mn |
+| ------------ | --------- | -------------------------------------------------------------------- | ---- | ---- | -- | --- | -- |
+| Acid         | C / O / D | DoT of 0 damage. Reduces armor. If armor = 0, does 1 damage.         | I    | 5    | -  | C   | S  |
+| Anchor       | C / O / D | can't move away from `object` or `creature`                          | S    | 10   | M  | N   | M  |
+| Attract      | O         | jolts `small` target towards `self`                                  | I    | -    | -  | F   | L  |
+| Barrier      | A         | creates see-thru but impassable wall                                 | S    | 30   | M  | N   | L  |
+| Berzerk      | C         | attacks closest `creature` or `object`. Does twice damage            | M    | 20   | -  | F   | M  |
+| Burn         | C / O / D | 1 damage, followed by DoT                                            | S    | 4    | -  | F   | S  |
+| Charm        | C         | becomes friendly and fights by your side                             | M    | 20   | -  | N   | M  |
+| Climb        | S         | can walk by `walls` (including ceilings)                             | L    | 60   | -  | -   | L  |
+| Confuse      | C         | walks randomly and is unable to attacks                              | M    | 20   | -  | N   | L  |
+| Darkness     | A         | creates a passable wall of darkness that blocks visibility           | S    | 30   | M  | F   | L  |
+| Detect       | S         | detects every `creature` in range and marks them                     | L    | 20   | L  | -   | M  |
+| Entrophy     | C / O / D | armor turns to 0                                                     | M    | -    | -  | F   | L  |
+| Fix          | O / D     | heals 2 damage                                                       | S    | -    | -  | C   | S  |
+| Fog          | A         | creates fog that blocks visibility at floor level                    | M    | 30   | M  | L   | M  |
+| Follow       | O         | becomes `creature` and levitates, following the player               | S    | 120  | -  | L   | L  |
+| Freeze       | C / O / D | 1 damage. becomes frozen (can't move / animate )                     | I    | 10   | -  | N   | M  |
+| Gravity      | A         | gravity in area becomes 50. speed / 2                                | M    | 30   | M  | N   | M  |
+| Haste        | C / S     | movement * 2                                                         | L    | 60   | -  | C   | L  |
+| Illusion     | A         | creates illusion of the player                                       | I    | 5    | S  | F   | M  |
+| Imprison     | C         | can't move, can't animate, can't be damaged                          | I    | 3    | -  | C   | M  |
+| Invisibility | S         | can't be seen by others                                              | S    | 5    | -  | -   | L  |
+| Iron         | C / S     | can't be damaged. (max armor?) speed / 4                             | M    | 20   | -  | -   | L  |
+| Levitate     | C / O     | levitates upwards and after time runs out, slowly descents           | M    | 7    | -  | F   | M  |
+| Light        | W / O     | creates light emanating from target                                  | S    | 120  | -  | N   | S  |
+| Magnet       |           | ???                                                                  |      |      |    |     |    |
+| Merge        | W         | fuses with selected wall. Can't move or act, but can see.            | S    | 10   | -  | C   | M  |
+| Orbit        |           | ???                                                                  |      |      |    |     |    |
+| Pacify       | C         | stops aggro                                                          | L    | 20   | -  | N   | S  |
+| Panacea      |           | ???                                                                  |      |      |    |     |    |
+| Phase        |           | `object` or `creature` dissapears and then reappears later           | M    | 5    | -  | F   | M  |
+| Pit          | W         | (ceiling and floor included) creates pit with spikes for 7 damage    | L    | 30   | M  | N   | L  |
+| Poison       | A         | creates poison fog at floor level. DoT of 1 to everyone on it        | S    | 10   | M  | N   | M  |
+| Portal       | W         | needs to cast twice. Creates magical doors connected                 | I    | 7    | -  | F   | M  |
+| Renew        | C / S     | Heals 2 damage                                                       | S    | -    | -  | C   | S  |
+| Repel        | S         | every `object` or `creature` is pushed outwards explosively          | I    | -    | M  | C   | M  |
+| Shield       | S         | Gains 3 armor points                                                 | L    | 120  | -  | -   | M  |
+| Shock        | C         | 3 damage, stunned                                                    | M    | 3    | -  | N   | L  |
+| Shrink       | C / S     | decreases it’s size                                                  | S    | 20   | -  | N   | S  |
+| Sling        | O         | hurled away from player                                              | L    | -    | -  | C   | S  |
+| Slow         | C         | Movement / 2                                                         | M    | 60   | -  | N   | M  |
+| Splash       | A         | creates blob of water that pushes `objects` and `creatures` away     | M    | -    | M  | N   | M  |
+| Switch       | C         | needs to cast twice. Switches 2 creatures positions                  | I    | 7    | -  | F   | M  |
+| Swoosh       | S         | hurls forward several meters gaining momentum.                       | I    | -    | -  | -   | L  |
+| Telekinesys  | O         | levitates and can be transported                                     | S    | -    | -  | C   | L  |
+| Thorns       | A         | fills with thorns. 1 damage to everyone on it. vampire heal          | M    | 7    | M  | N   | M  |
+| Trick        | O / D     | becomes invisible to others                                          | S    | 20   | -  | F   | S  |
+| Vision       | C / O     | you see through the eyes of target                                   | L    | 5    | -  | F   | L  |
+| Wall         | A         | creates a wall                                                       | M    | 30   | M  | N   | L  |
+| Ward         | A         | 1 damage to first to enter area. Loud noise emitted                  | S    | 120  | S  | C   | S  |
+| Web          | A         | Creates a sticky and jumpy web that can be set on fire               | S    | 30   | M  | F   | L  |
 
 
 
