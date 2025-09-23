@@ -52,6 +52,22 @@ Targets are game entities that can be affected by spells.
 
 Some entities share more than one target type. I.E.: Chests are both doors and objects. 
 
+
+### Controls
+
+So far, this is the default KB+M layout.
+
+- **WASD** = Movement
+- **Space** = Jump
+- **Shift** = Sprint mod
+- **E** = Opoerate
+- **F** = Target Self
+- **Q** = Spellbook
+- **1-4** = Use item
+- **LMB** = Left Hand Spell
+- **RMB** = Right Hand Spell
+- **ESC** = Menu
+
 ### Spells
 
 There are 50 different spells. You start with a few spells and get random ones as you go. You can power up the spells via potions and leveling up.
@@ -97,7 +113,7 @@ Every spell has a target, a cast time, and a mana cost. Optionally it can have a
 | Merge        | W         | fuses with selected wall. Can't move or act, but can see.            | S    | 10   | -  | C   | M  |
 | Orbit        | S         | 1 damage for every creature and object in M area around self         | S    | -    | M  | -   | L  |
 | Pacify       | C         | stops aggro                                                          | L    | 20   | -  | N   | S  |
-| Phase        |           | `object` or `creature` dissapears and then reappears later           | M    | 5    | -  | F   | M  |
+| Phase        | C / O     | Dissapears and reappears later                                       | M    | 5    | -  | F   | M  |
 | Pit          | W         | (ceiling and floor included) creates pit with spikes for 7 damage    | L    | 30   | M  | N   | L  |
 | Poison       | A         | creates poison fog at floor level. DoT of 1 to everyone on it        | S    | 10   | M  | N   | M  |
 | Portal       | W         | needs to cast twice. Creates connected portals that spew you off     | I    | 7    | -  | F   | M  |
@@ -116,7 +132,7 @@ Every spell has a target, a cast time, and a mana cost. Optionally it can have a
 | Thorns       | A         | fills with thorns. 1 damage to everyone on it. vampire heal          | M    | 7    | M  | N   | M  |
 | Trick        | O / D     | becomes invisible to others                                          | S    | 20   | -  | F   | S  |
 | Vision       | C / O     | you see through the eyes of target                                   | L    | 5    | -  | F   | L  |
-| Wall         | A         | creates a wall                                                       | M    | 30   | M  | N   | L  |
+| Wall         | A         | creates a `wall`                                                     | M    | 30   | M  | N   | L  |
 | Ward         | A         | 1 damage to first to enter area. Loud noise emitted                  | S    | 120  | S  | C   | S  |
 | Web          | A         | Creates a sticky and jumpy web that can be set on fire               | S    | 30   | M  | F   | L  |
 
@@ -139,7 +155,9 @@ If you pick up a spell you already know, it gets fortified (up to 3 times). A fo
 
 ### Entities
 
-- wall: affected by several spells that use it as target (climb, merge, light, pit, portal, wall). Properties: 
+- wall: affected by climb, merge, light, pit, portal, wall. Properties: *indestructible* can be modified temporarily with pit.
+- door: affected by acid, anchor, burn, entrophy, fix, freeze, trick. Properties: *can be destroyed*, *can be operated*. HP, ARMOR, LOCKED
+
 
 
 
