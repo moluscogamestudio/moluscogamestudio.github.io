@@ -2,32 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
 <channel><title>Molusco Gamestudio</title><link>https://moluscogamestudio.github.io//index.html</link>
 <description>Indie games that cater to nobody but me</description><language>en</language>
-<lastBuildDate>Fri, 19 Sep 2025 11:34:27 -0300</lastBuildDate>
-<pubDate>Fri, 19 Sep 2025 11:34:27 -0300</pubDate>
+<lastBuildDate>Wed, 24 Sep 2025 12:20:12 -0300</lastBuildDate>
+<pubDate>Wed, 24 Sep 2025 12:20:12 -0300</pubDate>
 <atom:link href="https://moluscogamestudio.github.io//feed.rss" rel="self" type="application/rss+xml" />
 <item><title>
-The chosen one
+Work is being done 
 </title><description><![CDATA[
 
-<p>Predictably, the one game I chose as a starter, was the unnamed <strong>wizard</strong> game.
-I started prototyping the engine and writing some definitions, including a game design document. </p>
+<p>I did some work. Mostly in the game design document, defining the mechanics and the spells. So far there are 50 spells and I don't know if I'll get to implement every one, but so far these three are implemented:</p>
 
-<p>So far, it's nothing more than that: just a prototype using Kenney's 3D assets. The main goal is to test if the core game is fun or not: solve puzzles and don't get killed using magic in a dungeon.</p>
+<ul>
+<li>Telekinesys: target an object and make it fly and move it to another place. Useful to move things around.</li>
+<li>Shrink: reduce yourself to one fifth of your regular size (and your speed). Use it to hide and to pass through small crevices.</li>
+<li>Swoosh: hurl yourself flying in a straight line at high speeds. Maybe useful to cross a chasm or to get away from danger.</li>
+</ul>
 
-<p>Here's a quick demo:</p>
-
-<p><video width="640" height="480" controls autoplay muted>
-  <source src="img/v1.mp4" type="video/mp4">
-ERROR: Your browser does not support the video tag.
-</video></p>
+<p>Now the un-fun begins. The prototype seems to work and now I need to put some elbow grease on the programming. I need to write a few state machines to make things right. This will take some time. Some boring, boring time.</p>
 
 <p>Tags: <a href='tag_wizard.html'>wizard</a></p>
-
 <!-- text end -->
-]]></description><link>https://moluscogamestudio.github.io//the-chosen-one.html</link>
-<guid>https://moluscogamestudio.github.io//./the-chosen-one.html</guid>
+]]></description><link>https://moluscogamestudio.github.io//work-is-being-done-.html</link>
+<guid>https://moluscogamestudio.github.io//./work-is-being-done-.html</guid>
 <dc:creator>Compi</dc:creator>
-<pubDate>Fri, 19 Sep 2025 11:30:00 -0300</pubDate></item>
+<pubDate>Wed, 24 Sep 2025 12:20:09 -0300</pubDate></item>
 <item><title>
 Natural selection
 </title><description><![CDATA[
@@ -54,7 +51,30 @@ Natural selection
 ]]></description><link>https://moluscogamestudio.github.io//natural-selection.html</link>
 <guid>https://moluscogamestudio.github.io//./natural-selection.html</guid>
 <dc:creator>Compi</dc:creator>
-<pubDate>Mon, 08 Sep 2025 18:14:02 -0300</pubDate></item>
+<pubDate>Sat, 20 Sep 2025 23:01:42 -0300</pubDate></item>
+<item><title>
+The chosen one
+</title><description><![CDATA[
+
+<p>Predictably, the one game I chose as a starter, was the unnamed <strong>wizard</strong> game.
+I started prototyping the engine and writing some definitions, including a game design document. </p>
+
+<p>So far, it's nothing more than that: just a prototype using Kenney's 3D assets. The main goal is to test if the core game is fun or not: solve puzzles and don't get killed using magic in a dungeon.</p>
+
+<p>Here's a quick demo:</p>
+
+<p><video width="640" height="480" controls autoplay muted>
+  <source src="img/v1.mp4" type="video/mp4">
+ERROR: Your browser does not support the video tag.
+</video></p>
+
+<p>Tags: <a href='tag_wizard.html'>wizard</a></p>
+
+<!-- text end -->
+]]></description><link>https://moluscogamestudio.github.io//the-chosen-one.html</link>
+<guid>https://moluscogamestudio.github.io//./the-chosen-one.html</guid>
+<dc:creator>Compi</dc:creator>
+<pubDate>Sat, 20 Sep 2025 23:01:42 -0300</pubDate></item>
 <item><title>
 The first post
 </title><description><![CDATA[
@@ -86,5 +106,5 @@ I have a few projects in development: a walking simulator, a medieval adventure,
 ]]></description><link>https://moluscogamestudio.github.io//the-first-post.html</link>
 <guid>https://moluscogamestudio.github.io//./the-first-post.html</guid>
 <dc:creator>Compi</dc:creator>
-<pubDate>Mon, 18 Aug 2025 18:34:28 -0300</pubDate></item>
+<pubDate>Sat, 20 Sep 2025 23:01:42 -0300</pubDate></item>
 </channel></rss>
