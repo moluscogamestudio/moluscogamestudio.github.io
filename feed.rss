@@ -2,9 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
 <channel><title>Molusco Gamestudio</title><link>https://moluscogamestudio.github.io//index.html</link>
 <description>Indie games that cater to nobody but me</description><language>en</language>
-<lastBuildDate>Wed, 28 Jan 2026 14:48:48 -0300</lastBuildDate>
-<pubDate>Wed, 28 Jan 2026 14:48:48 -0300</pubDate>
+<lastBuildDate>Mon, 30 Mar 2026 17:20:22 -0300</lastBuildDate>
+<pubDate>Mon, 30 Mar 2026 17:20:22 -0300</pubDate>
 <atom:link href="https://moluscogamestudio.github.io//feed.rss" rel="self" type="application/rss+xml" />
+<item><title>
+Two Months Later
+</title><description><![CDATA[
+
+<p>Development has started on the mobile game. It's about space ships, nothing too fancy. You can change between ships ingame and they all have different firing modes, special abilities and passive abilities.</p>
+
+<p>In two days of coding I got it running with the following features:</p>
+
+<ul>
+<li>switchable space ships (each one with a different firing mode).</li>
+<li>a special attack which for now is common to both 3 ships.</li>
+<li>dumb enemy (the ones that just try to crash into you)</li>
+<li>shooting enemy (beefier, with a shield)</li>
+<li>special enemy it lingers onscreen shooting at you</li>
+<li>explosions</li>
+<li>score keeping / game over.</li>
+</ul>
+
+<p>Next step is working on the backgrounds to define a kind of "map" and making static enemies (turrets) that shoot homing missiles.</p>
+
+<p>After that, I'll need to do the <em>real</em> special abilities for each ship.</p>
+
+<p>Tags: <a href='tag_molusco.html'>molusco</a></p>
+<!-- text end -->
+]]></description><link>https://moluscogamestudio.github.io//two-months-later.html</link>
+<guid>https://moluscogamestudio.github.io//./two-months-later.html</guid>
+<dc:creator>Compi</dc:creator>
+<pubDate>Mon, 30 Mar 2026 17:20:19 -0300</pubDate></item>
 <item><title>
 Ch-ch-ch-changes
 </title><description><![CDATA[
