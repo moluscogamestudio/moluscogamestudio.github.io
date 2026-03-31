@@ -2,9 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
 <channel><title>Molusco Gamestudio</title><link>https://moluscogamestudio.github.io//index.html</link>
 <description>Indie games that cater to nobody but me</description><language>en</language>
-<lastBuildDate>Mon, 30 Mar 2026 17:20:22 -0300</lastBuildDate>
-<pubDate>Mon, 30 Mar 2026 17:20:22 -0300</pubDate>
+<lastBuildDate>Tue, 31 Mar 2026 18:17:21 -0300</lastBuildDate>
+<pubDate>Tue, 31 Mar 2026 18:17:21 -0300</pubDate>
 <atom:link href="https://moluscogamestudio.github.io//feed.rss" rel="self" type="application/rss+xml" />
+<item><title>
+Another productive day
+</title><description><![CDATA[
+
+<p>The grind keeps going! </p>
+
+<ul>
+<li>Two new special abilites, the barrel roll and the countermeasures. One makes you invulnerable to collisions and bullets, the other makes every homing missile go haywire.</li>
+<li>Homing missiles? Well duh, now special enemies can shoot homing missiles.</li>
+<li>A new kind of enemy that lingers on screen.</li>
+<li>Now you can carousel-revolve your active ships during gameplay.</li>
+<li>Configurable amount of spawners</li>
+<li>Explosions, turrets and lots more!</li>
+</ul>
+
+<p>Tags: <a href='tag_molusco.html'>molusco</a></p>
+<!-- text end -->
+]]></description><link>https://moluscogamestudio.github.io//another-productive-day.html</link>
+<guid>https://moluscogamestudio.github.io//./another-productive-day.html</guid>
+<dc:creator>Compi</dc:creator>
+<pubDate>Tue, 31 Mar 2026 18:17:19 -0300</pubDate></item>
 <item><title>
 Two Months Later
 </title><description><![CDATA[
