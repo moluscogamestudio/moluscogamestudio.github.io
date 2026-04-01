@@ -2,9 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
 <channel><title>Molusco Gamestudio</title><link>https://moluscogamestudio.github.io//index.html</link>
 <description>Indie games that cater to nobody but me</description><language>en</language>
-<lastBuildDate>Tue, 31 Mar 2026 18:17:21 -0300</lastBuildDate>
-<pubDate>Tue, 31 Mar 2026 18:17:21 -0300</pubDate>
+<lastBuildDate>Wed, 01 Apr 2026 18:46:18 -0300</lastBuildDate>
+<pubDate>Wed, 01 Apr 2026 18:46:18 -0300</pubDate>
 <atom:link href="https://moluscogamestudio.github.io//feed.rss" rel="self" type="application/rss+xml" />
+<item><title>
+New features
+</title><description><![CDATA[
+
+<p>Today I did new features: </p>
+
+<ul>
+<li>new enemies</li>
+<li>a long and tortuous rescaling to better adapt the game to the different screen sizes</li>
+<li>unified several configurations to be easier to tinker with.</li>
+<li>health bars for "bigger" enemies</li>
+</ul>
+
+<p>It's been a long day. But I feel good as this looks promising.</p>
+
+<p>Tags: <a href='tag_molusco.html'>molusco</a></p>
+<!-- text end -->
+]]></description><link>https://moluscogamestudio.github.io//new-features.html</link>
+<guid>https://moluscogamestudio.github.io//./new-features.html</guid>
+<dc:creator>Compi</dc:creator>
+<pubDate>Wed, 01 Apr 2026 18:46:17 -0300</pubDate></item>
 <item><title>
 Another productive day
 </title><description><![CDATA[
