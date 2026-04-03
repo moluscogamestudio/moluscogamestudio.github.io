@@ -10,4 +10,4 @@ Today I did new features:
 It's been a long day. But I feel good as this looks promising.
 
 
-Tags: molusco
+Tags: mobile

@@ -6,7 +6,7 @@
         .subtitle{font-size:small;margin:12px 0px;}
         .content p{margin-left:24px;margin-right:24px;}
         h1{margin-bottom:12px !important;}
-        #description{font-size:large;margin-bottom:12px;}
+        #description{margin-top:10px;padding:10px 0;color:#aaaaaa;}
         h3{margin-top:42px;margin-bottom:8px;}
         h4{margin-left:24px;margin-right:24px;}
         img{max-width:100%;}

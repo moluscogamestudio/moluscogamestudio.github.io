@@ -17,4 +17,4 @@ Next step is working on the backgrounds to define a kind of "map" and making sta
 
 After that, I'll need to do the *real* special abilities for each ship.
 
-Tags: molusco
+Tags: mobile

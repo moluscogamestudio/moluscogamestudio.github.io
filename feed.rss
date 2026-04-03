@@ -1,10 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
-<channel><title>Molusco Gamestudio</title><link>https://moluscogamestudio.github.io//index.html</link>
+<channel><title>Molusco Gamestudio's blog</title><link>https://moluscogamestudio.github.io//index.html</link>
 <description>Indie games that cater to nobody but me</description><language>en</language>
-<lastBuildDate>Wed, 01 Apr 2026 18:46:18 -0300</lastBuildDate>
-<pubDate>Wed, 01 Apr 2026 18:46:18 -0300</pubDate>
+<lastBuildDate>Fri, 03 Apr 2026 02:44:20 -0300</lastBuildDate>
+<pubDate>Fri, 03 Apr 2026 02:44:20 -0300</pubDate>
 <atom:link href="https://moluscogamestudio.github.io//feed.rss" rel="self" type="application/rss+xml" />
+<item><title>
+That moment when you KNOW you are fking up
+</title><description><![CDATA[
+
+<p>I spent the day (holyday) researching for art and marketing. I don't know if I should be doing this at the moment, The game is still on early stages, but it seems fun (addictive) enough to spend time on this. Just drawing characters for the pilots and crew... but it seems off.</p>
+
+<p>Only time will tell. I also bought a website on a whim. So I might migrate my data there.</p>
+
+<p>There's already a name for this game: <strong>Tri-Strike Squadron</strong> or TSS for short.</p>
+
+<p>Tags: <a href='tag_mobile.html'>mobile</a>, <a href='tag_tss.html'>tss</a></p>
+<!-- text end -->
+]]></description><link>https://moluscogamestudio.github.io//that-moment-when-you-know-you-are-fking-up.html</link>
+<guid>https://moluscogamestudio.github.io//./that-moment-when-you-know-you-are-fking-up.html</guid>
+<dc:creator>Compi</dc:creator>
+<pubDate>Fri, 03 Apr 2026 02:44:19 -0300</pubDate></item>
 <item><title>
 New features
 </title><description><![CDATA[
@@ -20,7 +36,10 @@ New features
 
 <p>It's been a long day. But I feel good as this looks promising.</p>
 
-<p>Tags: <a href='tag_molusco.html'>molusco</a></p>
+<p>Tags: <a href='tag_mobile.html'>mobile</a></p>
+
+
+
 <!-- text end -->
 ]]></description><link>https://moluscogamestudio.github.io//new-features.html</link>
 <guid>https://moluscogamestudio.github.io//./new-features.html</guid>
@@ -41,7 +60,9 @@ Another productive day
 <li>Explosions, turrets and lots more!</li>
 </ul>
 
-<p>Tags: <a href='tag_molusco.html'>molusco</a></p>
+<p>Tags: <a href='tag_mobile.html'>mobile</a></p>
+
+
 <!-- text end -->
 ]]></description><link>https://moluscogamestudio.github.io//another-productive-day.html</link>
 <guid>https://moluscogamestudio.github.io//./another-productive-day.html</guid>
@@ -69,7 +90,9 @@ Two Months Later
 
 <p>After that, I'll need to do the <em>real</em> special abilities for each ship.</p>
 
-<p>Tags: <a href='tag_molusco.html'>molusco</a></p>
+<p>Tags: <a href='tag_mobile.html'>mobile</a></p>
+
+
 <!-- text end -->
 ]]></description><link>https://moluscogamestudio.github.io//two-months-later.html</link>
 <guid>https://moluscogamestudio.github.io//./two-months-later.html</guid>
@@ -83,15 +106,9 @@ Ch-ch-ch-changes
 So, the new plan is a 3 game cycle:</p>
 
 <ul>
-<li><ol>
-<li>A mobile game</li>
-</ol></li>
-<li><ol>
-<li>An old style game (see below)</li>
-</ol></li>
-<li><ol>
-<li>A game I like</li>
-</ol></li>
+<li>1. A mobile game</li>
+<li>2. An old style game (see below)</li>
+<li>3. A game I like</li>
 </ul>
 
 <h2>Mobile Games:</h2>
@@ -100,7 +117,7 @@ So, the new plan is a 3 game cycle:</p>
 
 <h2>Old Style Games:</h2>
 
-<p>Games that look like they are from the Atari 2600. Even better if I can match the original pixel size. These ones are for fun and I plan to have a series of them.</p>
+<p>Games that look like they are from the Atari 2600, or Coleco Vision. Even better if I can match the original pixel size. These ones are for fun and I plan to have a series of them.</p>
 
 <h2>Games I like:</h2>
 
@@ -111,6 +128,9 @@ So, the new plan is a 3 game cycle:</p>
 <p>See ya.</p>
 
 <p>Tags: <a href='tag_molusco.html'>molusco</a></p>
+
+
+
 <!-- text end -->
 ]]></description><link>https://moluscogamestudio.github.io//ch-ch-ch-changes.html</link>
 <guid>https://moluscogamestudio.github.io//./ch-ch-ch-changes.html</guid>
@@ -127,11 +147,93 @@ Work is NOT being done
 <p>Anyways... nothing to see here, move on, move on please.</p>
 
 <p>Tags: <a href='tag_wizard.html'>wizard</a></p>
+
+
+
 <!-- text end -->
 ]]></description><link>https://moluscogamestudio.github.io//work-is-not-being-done.html</link>
 <guid>https://moluscogamestudio.github.io//./work-is-not-being-done.html</guid>
 <dc:creator>Compi</dc:creator>
-<pubDate>Wed, 29 Oct 2025 23:54:09 -0300</pubDate></item>
+<pubDate>Mon, 27 Oct 2025 14:34:23 -0300</pubDate></item>
+<item><title>
+Work is being done 
+</title><description><![CDATA[
+
+<p>I did some work. Mostly in the game design document, defining the mechanics and the spells. So far there are 50 spells and I don't know if I'll get to implement every one, but so far these three are implemented:</p>
+
+<ul>
+<li>Telekinesys: target an object and make it fly and move it to another place. Useful to move things around.</li>
+<li>Shrink: reduce yourself to one fifth of your regular size (and your speed). Use it to hide and to pass through small crevices.</li>
+<li>Swoosh: hurl yourself flying in a straight line at high speeds. Maybe useful to cross a chasm or to get away from danger.</li>
+</ul>
+
+<p>Now the un-fun begins. The prototype seems to work and now I need to put some elbow grease on the programming. I need to write a few state machines to make things right. This will take some time. Some boring, boring time.</p>
+
+<p>Tags: <a href='tag_wizard.html'>wizard</a></p>
+
+
+
+<!-- text end -->
+]]></description><link>https://moluscogamestudio.github.io//work-is-being-done-.html</link>
+<guid>https://moluscogamestudio.github.io//./work-is-being-done-.html</guid>
+<dc:creator>Compi</dc:creator>
+<pubDate>Wed, 24 Sep 2025 12:20:09 -0300</pubDate></item>
+<item><title>
+The chosen one
+</title><description><![CDATA[
+
+<p>Predictably, the one game I chose as a starter, was the unnamed <strong>wizard</strong> game.
+I started prototyping the engine and writing some definitions, including a game design document. </p>
+
+<p>So far, it's nothing more than that: just a prototype using Kenney's 3D assets. The main goal is to test if the core game is fun or not: solve puzzles and don't get killed using magic in a dungeon.</p>
+
+<p>Here's a quick demo:</p>
+
+<p><video width="640" height="480" controls autoplay muted>
+  <source src="img/v1.mp4" type="video/mp4">
+ERROR: Your browser does not support the video tag.
+</video></p>
+
+<p>Tags: <a href='tag_wizard.html'>wizard</a></p>
+
+
+
+
+<!-- text end -->
+]]></description><link>https://moluscogamestudio.github.io//the-chosen-one.html</link>
+<guid>https://moluscogamestudio.github.io//./the-chosen-one.html</guid>
+<dc:creator>Compi</dc:creator>
+<pubDate>Fri, 19 Sep 2025 11:30:00 -0300</pubDate></item>
+<item><title>
+Natural selection
+</title><description><![CDATA[
+
+<p>As per my last post, I wrote 31 new game ideas and selected three possible games. Mayble I'll do all three (yeah, sure). Maybe I'll START both three and then dich all three until a new thing comes along.</p>
+
+<p>The selected games are: </p>
+
+<ul>
+<li>a broody, ambiental, horror game in first person about being stuck in an unknown apartment building. Let's call it <strong><em>building</em></strong>.</li>
+<li>a dark humor job simulator game where the grim reaper works from home. Let's call it <strong><em>reaper</em></strong>.</li>
+<li>a funny physics puzzle game where you are a wizard trapped in a dungeon and your spells let you create and modify your environment. Let's call it <strong><em>wizard</em></strong>.</li>
+</ul>
+
+<p>If I had to choose one of those, It would be <strong><em>wizard</em></strong>. Creative use of the spells to solve the dungeon get me hyped up. I've been thinking about different spells, like "web": you create a web. The web is bouncy so you can jump higher from it. But it's sticky, so enemies walk really slow over it. Also you can use it to climb vertically like a ladder. And if it touches fire, it's engulfed on flames. Or you can use it to block a corridor. The problem with a game like this is I need to tweak a lot of things to get the mechanics / physics right. As a plus, it can work in several ways: FPS, 3rd person view, etc. I was even thinking about a game where the environment is all blocky 3d and the characters are superdeformed 2d sprites with a thick border. It was cool. Might steal.</p>
+
+<p>Next, I would choose <strong><em>reaper</em></strong>. I like dark humor and the whole "kill the guy by suggesting a course of action" also gets me hyped. The main challenge for this game is graphics. While in "wizard" the graphics can be super blocky because the main fun is in the physics / magical system, here the fun must be how the decisions made by the soon-to-be dead people are depicted. Pacman doesn't just dissappears when he dies, y'know. I know there can be lots of fun in this game, but how I depict it is crucial. Cutesy art style? medieval woodblock prints? no, those are reserved for another one. Crude and rudimentary pixel art? I don't know. The best part is I can get to do all the game without any art at all, just menus. See how it goes.</p>
+
+<p>Last, it's <strong><em>building</em></strong>. It's an over-done idea. A cliché. Another backrooms game. The thing is... I worked a LOT with the first 3 Quake games, Half-Life and Counterstrike 1.4 to 1.6 so I'm really proficient with 3D games about a gloomy building in a first person view game. So I know EXACTLY what to do here. Bad thing? How do I get people to be engaged in "just another spooky backrooms game"?</p>
+
+<p>Tags: <a href='tag_plans.html'>plans</a></p>
+
+
+
+
+<!-- text end -->
+]]></description><link>https://moluscogamestudio.github.io//natural-selection.html</link>
+<guid>https://moluscogamestudio.github.io//./natural-selection.html</guid>
+<dc:creator>Compi</dc:creator>
+<pubDate>Mon, 08 Sep 2025 18:14:02 -0300</pubDate></item>
 <item><title>
 The first post
 </title><description><![CDATA[
@@ -159,79 +261,12 @@ I have a few projects in development: a walking simulator, a medieval adventure,
 
 
 
+
+
+
 <!-- text end -->
 ]]></description><link>https://moluscogamestudio.github.io//the-first-post.html</link>
 <guid>https://moluscogamestudio.github.io//./the-first-post.html</guid>
 <dc:creator>Compi</dc:creator>
-<pubDate>Wed, 29 Oct 2025 23:54:09 -0300</pubDate></item>
-<item><title>
-Work is being done 
-</title><description><![CDATA[
-
-<p>I did some work. Mostly in the game design document, defining the mechanics and the spells. So far there are 50 spells and I don't know if I'll get to implement every one, but so far these three are implemented:</p>
-
-<ul>
-<li>Telekinesys: target an object and make it fly and move it to another place. Useful to move things around.</li>
-<li>Shrink: reduce yourself to one fifth of your regular size (and your speed). Use it to hide and to pass through small crevices.</li>
-<li>Swoosh: hurl yourself flying in a straight line at high speeds. Maybe useful to cross a chasm or to get away from danger.</li>
-</ul>
-
-<p>Now the un-fun begins. The prototype seems to work and now I need to put some elbow grease on the programming. I need to write a few state machines to make things right. This will take some time. Some boring, boring time.</p>
-
-<p>Tags: <a href='tag_wizard.html'>wizard</a></p>
-<!-- text end -->
-]]></description><link>https://moluscogamestudio.github.io//work-is-being-done-.html</link>
-<guid>https://moluscogamestudio.github.io//./work-is-being-done-.html</guid>
-<dc:creator>Compi</dc:creator>
-<pubDate>Wed, 29 Oct 2025 23:54:09 -0300</pubDate></item>
-<item><title>
-The chosen one
-</title><description><![CDATA[
-
-<p>Predictably, the one game I chose as a starter, was the unnamed <strong>wizard</strong> game.
-I started prototyping the engine and writing some definitions, including a game design document. </p>
-
-<p>So far, it's nothing more than that: just a prototype using Kenney's 3D assets. The main goal is to test if the core game is fun or not: solve puzzles and don't get killed using magic in a dungeon.</p>
-
-<p>Here's a quick demo:</p>
-
-<p><video width="640" height="480" controls autoplay muted>
-  <source src="img/v1.mp4" type="video/mp4">
-ERROR: Your browser does not support the video tag.
-</video></p>
-
-<p>Tags: <a href='tag_wizard.html'>wizard</a></p>
-
-<!-- text end -->
-]]></description><link>https://moluscogamestudio.github.io//the-chosen-one.html</link>
-<guid>https://moluscogamestudio.github.io//./the-chosen-one.html</guid>
-<dc:creator>Compi</dc:creator>
-<pubDate>Wed, 29 Oct 2025 23:54:09 -0300</pubDate></item>
-<item><title>
-Natural selection
-</title><description><![CDATA[
-
-<p>As per my last post, I wrote 31 new game ideas and selected three possible games. Mayble I'll do all three (yeah, sure). Maybe I'll START both three and then dich all three until a new thing comes along.</p>
-
-<p>The selected games are: </p>
-
-<ul>
-<li>a broody, ambiental, horror game in first person about being stuck in an unknown apartment building. Let's call it <strong><em>building</em></strong>.</li>
-<li>a dark humor job simulator game where the grim reaper works from home. Let's call it <strong><em>reaper</em></strong>.</li>
-<li>a funny physics puzzle game where you are a wizard trapped in a dungeon and your spells let you create and modify your environment. Let's call it <strong><em>wizard</em></strong>.</li>
-</ul>
-
-<p>If I had to choose one of those, It would be <strong><em>wizard</em></strong>. Creative use of the spells to solve the dungeon get me hyped up. I've been thinking about different spells, like "web": you create a web. The web is bouncy so you can jump higher from it. But it's sticky, so enemies walk really slow over it. Also you can use it to climb vertically like a ladder. And if it touches fire, it's engulfed on flames. Or you can use it to block a corridor. The problem with a game like this is I need to tweak a lot of things to get the mechanics / physics right. As a plus, it can work in several ways: FPS, 3rd person view, etc. I was even thinking about a game where the environment is all blocky 3d and the characters are superdeformed 2d sprites with a thick border. It was cool. Might steal.</p>
-
-<p>Next, I would choose <strong><em>reaper</em></strong>. I like dark humor and the whole "kill the guy by suggesting a course of action" also gets me hyped. The main challenge for this game is graphics. While in "wizard" the graphics can be super blocky because the main fun is in the physics / magical system, here the fun must be how the decisions made by the soon-to-be dead people are depicted. Pacman doesn't just dissappears when he dies, y'know. I know there can be lots of fun in this game, but how I depict it is crucial. Cutesy art style? medieval woodblock prints? no, those are reserved for another one. Crude and rudimentary pixel art? I don't know. The best part is I can get to do all the game without any art at all, just menus. See how it goes.</p>
-
-<p>Last, it's <strong><em>building</em></strong>. It's an over-done idea. A cliché. Another backrooms game. The thing is... I worked a LOT with the first 3 Quake games, Half-Life and Counterstrike 1.4 to 1.6 so I'm really proficient with 3D games about a gloomy building in a first person view game. So I know EXACTLY what to do here. Bad thing? How do I get people to be engaged in "just another spooky backrooms game"?</p>
-
-<p>Tags: <a href='tag_plans.html'>plans</a></p>
-
-<!-- text end -->
-]]></description><link>https://moluscogamestudio.github.io//natural-selection.html</link>
-<guid>https://moluscogamestudio.github.io//./natural-selection.html</guid>
-<dc:creator>Compi</dc:creator>
-<pubDate>Wed, 29 Oct 2025 23:54:09 -0300</pubDate></item>
+<pubDate>Mon, 18 Aug 2025 18:34:28 -0300</pubDate></item>
 </channel></rss>
